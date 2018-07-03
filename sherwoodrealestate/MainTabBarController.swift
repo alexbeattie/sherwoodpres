@@ -13,24 +13,24 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate, SFSa
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         
         let index = viewControllers?.index(of: viewController)
-        if index == 1 {
-            print("tap")
-            let urlString = "http://sherwoodrealestate.com/about-us"
-            let url = URL(string: urlString)
-            let searchNavController = SFSafariViewController(url: url!)
-            let navController = UINavigationController(rootViewController: searchNavController)
-
-//            safariViewController.delegate = self
-//            self.present(safariViewController, animated: true)
-
-           // let layout = UICollectionViewFlowLayout()
-//            let photoSelectorController = PhotoSelectorController(collectionViewLayout: layout)
-//            let navController = UINavigationController(rootViewController: photoSelectorController)
-            
-            present(navController, animated: true, completion: nil)
-            
-            return false
-        }
+//        if index == 1 {
+//            print("tap")
+//            let urlString = "http://sherwoodrealestate.com/about-us"
+//            let url = URL(string: urlString)
+//            let searchNavController = SFSafariViewController(url: url!)
+//            let navController = UINavigationController(rootViewController: searchNavController)
+//
+////            safariViewController.delegate = self
+////            self.present(safariViewController, animated: true)
+//
+//           // let layout = UICollectionViewFlowLayout()
+////            let photoSelectorController = PhotoSelectorController(collectionViewLayout: layout)
+////            let navController = UINavigationController(rootViewController: photoSelectorController)
+//            
+//            present(navController, animated: true, completion: nil)
+//            
+//            return false
+//        }
         
         return true
     }
@@ -57,13 +57,13 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate, SFSa
         let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: HomeViewController(collectionViewLayout: UICollectionViewFlowLayout()))
         
 
-        let searchNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "search_unselected"), selectedImage: #imageLiteral(resourceName: "search_selected"), rootViewController: WebViewController())
+//        let searchNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "search_unselected"), selectedImage: #imageLiteral(resourceName: "search_selected"), rootViewController: WebViewController())
 
         let layout = UICollectionViewFlowLayout()
 
-        let plusNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "plus_unselected"), selectedImage: #imageLiteral(resourceName: "plus_unselected"), rootViewController: AboutSherwoodVC(collectionViewLayout: UICollectionViewFlowLayout()))
+        let plusNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "grid"), selectedImage: #imageLiteral(resourceName: "grid"), rootViewController: AboutSherwoodVC(collectionViewLayout: UICollectionViewFlowLayout()))
         
-        let likeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selectedImage: #imageLiteral(resourceName: "like_selected"), rootViewController: Clubs(collectionViewLayout: UICollectionViewFlowLayout()))
+        let likeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "tennis"), selectedImage: #imageLiteral(resourceName: "tennis"), rootViewController: ClubsVC(collectionViewLayout: UICollectionViewFlowLayout()))
         
         //user profile
 //        let layout = UICollectionViewFlowLayout()
@@ -71,13 +71,13 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate, SFSa
         
         let userProfileNavController = UINavigationController(rootViewController: userProfileController)
         
-        userProfileNavController.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")
-        userProfileNavController.tabBarItem.selectedImage = #imageLiteral(resourceName: "profile_selected")
+        userProfileNavController.tabBarItem.image = #imageLiteral(resourceName: "pins")
+        userProfileNavController.tabBarItem.selectedImage = #imageLiteral(resourceName: "pins")
         
         tabBar.tintColor = .black
         
         viewControllers = [homeNavController,
-                           searchNavController,
+//                           searchNavController,
                            plusNavController,
                            likeNavController,
                            userProfileNavController]

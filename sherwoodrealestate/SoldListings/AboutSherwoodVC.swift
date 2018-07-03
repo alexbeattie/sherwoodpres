@@ -130,10 +130,10 @@ class AboutSherwoodVC: UICollectionViewController, UICollectionViewDelegateFlowL
             cell.nameLabel.text = listingName
         }
         
-        if let listingPrice = listingClass["description"] as? String {
-            cell.costLabel.text =  listingPrice
-        }
-        
+//        if let listingPrice = listingClass["description"] as? String {
+//            cell.costLabel.text =  listingPrice
+//        }
+//        
 
         return cell
     }
@@ -156,6 +156,7 @@ class AboutSherwoodVC: UICollectionViewController, UICollectionViewDelegateFlowL
             label.text = "TEST"
             label.font = UIFont.systemFont(ofSize: 16)
             label.textAlignment = .center
+            label.textColor = UIColor.white
             return label
         }()
         let costLabel: UILabel = {

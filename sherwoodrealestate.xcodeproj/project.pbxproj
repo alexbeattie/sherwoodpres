@@ -35,6 +35,8 @@
 		7890A63F20B353C20090E0A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7890A63D20B353C20090E0A2 /* LaunchScreen.storyboard */; };
 		7890A64A20B354230090E0A2 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890A64920B354230090E0A2 /* Listing.swift */; };
 		78AD408620EACC2E00BBC3A4 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD408520EACC2E00BBC3A4 /* Contact.swift */; };
+		78AD408820EB01DA00BBC3A4 /* ClubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD408720EB01DA00BBC3A4 /* ClubVC.swift */; };
+		78AD408A20EB11F300BBC3A4 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD408920EB11F300BBC3A4 /* CommentCell.swift */; };
 		8E6BC69220E9A4F2009E5E20 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BC69120E9A4F1009E5E20 /* NewsItem.swift */; };
 		BA0755220193EFEA6214A9D7 /* Pods_sherwoodrealestate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB534AA98BF91A5BF2D456D /* Pods_sherwoodrealestate.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		7890A64620B353E20090E0A2 /* sherwoodrealestate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sherwoodrealestate-Bridging-Header.h"; sourceTree = "<group>"; };
 		7890A64920B354230090E0A2 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		78AD408520EACC2E00BBC3A4 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		78AD408720EB01DA00BBC3A4 /* ClubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubVC.swift; sourceTree = "<group>"; };
+		78AD408920EB11F300BBC3A4 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		7937DA7CB733B7DC07191D81 /* Pods-sherwoodrealestate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sherwoodrealestate.release.xcconfig"; path = "Pods/Target Support Files/Pods-sherwoodrealestate/Pods-sherwoodrealestate.release.xcconfig"; sourceTree = "<group>"; };
 		81875AC7DA8DFEAE080E743B /* Pods-sherwoodrealestate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sherwoodrealestate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sherwoodrealestate/Pods-sherwoodrealestate.debug.xcconfig"; sourceTree = "<group>"; };
 		8E6BC69020E996B5009E5E20 /* sherwoodrealestate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sherwoodrealestate.entitlements; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		7890A63320B353C20090E0A2 /* sherwoodrealestate */ = {
 			isa = PBXGroup;
 			children = (
+				78AD408B20EB181E00BBC3A4 /* WorkingClubs */,
 				8E6BC69020E996B5009E5E20 /* sherwoodrealestate.entitlements */,
 				8E6BC69120E9A4F1009E5E20 /* NewsItem.swift */,
 				78AD408520EACC2E00BBC3A4 /* Contact.swift */,
@@ -185,6 +190,15 @@
 				781FAB3620B5F37E00E13855 /* Constants.swift */,
 			);
 			path = sherwoodrealestate;
+			sourceTree = "<group>";
+		};
+		78AD408B20EB181E00BBC3A4 /* WorkingClubs */ = {
+			isa = PBXGroup;
+			children = (
+				78AD408920EB11F300BBC3A4 /* CommentCell.swift */,
+				78AD408720EB01DA00BBC3A4 /* ClubVC.swift */,
+			);
+			path = WorkingClubs;
 			sourceTree = "<group>";
 		};
 		A1AB3B916318C73790223413 /* Pods */ = {
@@ -332,8 +346,10 @@
 				785DE0C620D5F0AC00BFB8DB /* SettingCell.swift in Sources */,
 				785DE0C020D5E17200BFB8DB /* Extensions.swift in Sources */,
 				781FAB2E20B36E8700E13855 /* ListingSlides.swift in Sources */,
+				78AD408A20EB11F300BBC3A4 /* CommentCell.swift in Sources */,
 				8E6BC69220E9A4F2009E5E20 /* NewsItem.swift in Sources */,
 				781FAB3220B3706100E13855 /* Annotation.swift in Sources */,
+				78AD408820EB01DA00BBC3A4 /* ClubVC.swift in Sources */,
 				7841524E20E6D4FE003B028F /* ClubsSlides.swift in Sources */,
 				7890A63520B353C20090E0A2 /* AppDelegate.swift in Sources */,
 				7832981520D8330600A81034 /* AboutSherwoodVC.swift in Sources */,
